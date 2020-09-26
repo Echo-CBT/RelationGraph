@@ -18,6 +18,7 @@ For Introduction and Understanding the project head over [here](https://github.c
 <br />
 
 ## For Developers
+Make sure you have `graphviz` installed
 1. `git clone https://github.com/Echo-CBT/RelationGraph`
 2. `cd RelationGraph`
 3. `virtualenv .`

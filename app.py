@@ -10,10 +10,10 @@ client = StanfordOpenIE()
 @app.route('/getGraph', methods=['POST'])
 def get_image():
     json = request.json
-    # text = json['text']
-    text = 'Barack Obama was born in Hawaii. Richard Manning wrote this sentence.'
-    graph_image = 'graph.png'
-    client.generate_graphviz_graph(text, graph_image)
+    note = json['note']
+    # note = 'Barack Obama was born in Hawaii. Richard Manning wrote this sentence.'
+    graph_image = './graph.png'
+    client.generate_graphviz_graph(note, graph_image)
     return send_file(graph_image, mimetype='image/png')
 
 if __name__ == '__main__':
